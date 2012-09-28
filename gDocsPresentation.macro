@@ -1,0 +1,20 @@
+## Macro title: Google Docs Presentation
+## Macro has a body: N
+## Body processing: None
+## Output: HTML
+##
+## Developed by: Marcel Silberhorn <c0d3r-2012∆childno.de>
+## Date created: 27/09/2012
+## Installed by: Confluence Administrator
+
+## This is an example macro
+## @param DocId:title=Document Id|type=string|required=true|desc=The Google Docs document id
+## @param Width:title=Macro width in px|type=int|required=true|default=900
+## @param Height:title=Macro height in px|type=int|required=true|default=700
+## @param Autostart:title=Autostart presentation?|type=boolean|default=false
+## @param PlayLoop:title=Show pres. in loop?|type=boolean|default=false
+## @param AutoPlayDelay:title=AutoPlay Delay in mills|type=int|default=30000
+## @param Fullscreen:title=Allow fullscreen mode?|type=boolean|default=true
+
+
+<iframe src="https://docs.google.com/presentation/embed?id=${paramDocId}&start=${paramAutostart}&loop=${paramPlayLoop}&delayms=${paramAutoPlayDelay}" frameborder="0" width="${paramWidth}" height="${paramHeight}" allowfullscreen="${paramFullscreen}" mozallowfullscreen="${paramFullscreen}" webkitallowfullscreen="${paramFullscreen}"></iframe>
