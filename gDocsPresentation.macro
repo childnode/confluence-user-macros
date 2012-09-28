@@ -11,10 +11,9 @@
 ## @param DocId:title=Document Id|type=string|required=true|desc=The Google Docs document id
 ## @param Width:title=Macro width in px|type=int|required=true|default=900
 ## @param Height:title=Macro height in px|type=int|required=true|default=700
-## @param Autostart:title=Autostart presentation?|type=boolean|default=false
-## @param PlayLoop:title=Show pres. in loop?|type=boolean|default=false
-## @param AutoPlayDelay:title=AutoPlay Delay in mills|type=int|default=30000
-## @param Fullscreen:title=Allow fullscreen mode?|type=boolean|default=true
-
+## @param Autostart:title=Autostart presentation?|type=boolean|required=true|default=false
+## @param PlayLoop:title=Show pres. in loop?|type=boolean|required=true|default=false
+## @param AutoPlayDelay:title=Delay for slide switch in mills|type=int|required=true|default=30000
+## @param Fullscreen:title=Allow fullscreen mode?|type=boolean|required=true|default=false
 
 <iframe src="https://docs.google.com/presentation/embed?id=${paramDocId}&start=${paramAutostart}&loop=${paramPlayLoop}&delayms=${paramAutoPlayDelay}" frameborder="0" width="${paramWidth}" height="${paramHeight}" allowfullscreen="${paramFullscreen}" mozallowfullscreen="${paramFullscreen}" webkitallowfullscreen="${paramFullscreen}"></iframe>
